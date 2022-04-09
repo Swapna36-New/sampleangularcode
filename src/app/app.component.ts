@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'onlinevegetableapplication';
+  title = 'Welcome to onlinevegetableapplication store';
+  subtitle = "one click solution for daily vegetables"
+
+  navbarOpen = false;
+
+toggleNavbar() {
+  this.navbarOpen = !this.navbarOpen;
+}
 }
