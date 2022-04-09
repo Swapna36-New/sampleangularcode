@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customerlogin.component.css']
 })
 export class CustomerloginComponent implements OnInit {
+  title = "Login Here...."
+  login:string ='';
+  password:string ='';
 
-  constructor() { }
+  forSubmitted = false;
+  constructor() {
+
+   }
 
   ngOnInit(): void {
+  }
+
+  readLoginDetails(loginform: any){
+    console.log("submitted the form....")
+      console.log(loginform)
   }
 
 }
